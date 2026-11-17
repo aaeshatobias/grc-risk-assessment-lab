@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/34030624/README.md)
 # GRC Lab: Risk Assessment & Control Gap Analysis
 
 > **One-line summary:** Performed a risk assessment and NIST CSF 2.0 gap analysis for a fictional 50-person medical billing company, with three security policies, a prioritized remediation plan, an audit evidence tracker, and an executive memo.
@@ -10,7 +9,7 @@ Anita & Daughters is a fictional medical billing firm in Newark, NJ. I inventori
 
 ## Skills Demonstrated
 - Risk identification, scoring, and prioritization
-- Control framework mapping (NIST CSF 2.0)
+- Control framework mapping (NIST CSF 2.0) and crosswalks to NIST SP 800-53 Rev. 5, SOC 2, and ISO 27001:2022
 - Security policy writing
 - Gap analysis and remediation planning
 - Audit evidence tracking
@@ -33,6 +32,7 @@ Anita & Daughters is a fictional medical billing firm in Newark, NJ. I inventori
 | Incident Response Policy | [docs/policies/incident-response-policy.md](docs/policies/incident-response-policy.md) |
 | Acceptable Use Policy | [docs/policies/acceptable-use-policy.md](docs/policies/acceptable-use-policy.md) |
 | Executive memo | [docs/executive-memo.pdf](docs/executive-memo.pdf) |
+| Framework crosswalk (NIST CSF 2.0 to NIST SP 800-53 Rev. 5, SOC 2, ISO 27001:2022) | [docs/framework-crosswalk.md](docs/framework-crosswalk.md) ([CSV](docs/framework-crosswalk.csv)) |
 
 ## Methodology
 1. **Scope and assets:** listed 10 systems and 8 supporting assets, each with an owner, the data it holds, a classification, and a 1 to 5 criticality score.
@@ -77,6 +77,9 @@ The full register of 15 risks is on the Risk Register tab.
 | Detect | 2 | 0 | 0 | 2 | DE.CM-03: no one reviews sign-in logs |
 | Respond | 2 | 0 | 0 | 2 | RS.MA-01: no written incident response plan |
 | Recover | 2 | 0 | 0 | 2 | RC.RP-03: restores never tested |
+
+## Framework Crosswalk
+All 24 controls are cross-mapped to NIST SP 800-53 Rev. 5, the SOC 2 Trust Services Criteria, and ISO 27001:2022 Annex A. The 21 gaps trace to 50 NIST 800-53 controls and enhancements and 22 SOC 2 criteria. Most gaps fall in SOC 2 CC7 (monitoring, incident response, recovery) and CC6 (access). Full mapping with the reasoning for each row: [docs/framework-crosswalk.md](docs/framework-crosswalk.md)
 
 ## Policies Written
 - [Access Control Policy](docs/policies/access-control-policy.md): 11 numbered rules (AC-1 to AC-11)
@@ -138,6 +141,8 @@ All 24 controls are on the Evidence Tracker tab.
 README.md
 docs/
   01-company-profile.md
+  framework-crosswalk.md
+  framework-crosswalk.csv
   risk-assessment.xlsx
   executive-memo.pdf
   policies/
